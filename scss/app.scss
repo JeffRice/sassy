@@ -1,0 +1,66 @@
+@import "settings";
+@import
+"foundation/components/alert-boxes",
+"foundation/components/button-groups",
+"foundation/components/buttons",
+"foundation/components/dropdown",
+"foundation/components/forms",
+"foundation/components/grid",
+"foundation/components/inline-lists",
+"foundation/components/top-bar",
+"foundation/components/type";
+
+
+// styles affecting screens up to 1000px
+ @media #{$medium-only} {
+
+ .medium-search { display: none;}
+ .small-search { display: block;}
+   .top-bar {
+    width: 660px;
+}
+.top-bar-section ul li>a {
+	font-size: 9px;
+}
+.top-bar-section ul li>button {
+    font-size: 10px;
+    padding-left: 0.145833rem;
+    padding-right: 0.145833rem;
+}
+
+.top-bar-section .has-form {
+    background: #81b3c1;
+    height: 3.4375rem;
+    padding: 0 0.145833rem;
+}
+
+.top-bar-section ul {
+    margin: 0 5px;
+}
+
+ }
+
+ // styles affecting screens over 1000px
+@media #{$large-up} {
+ .medium-search { display: block;}
+ .small-search { display: none;}
+.top-bar {
+    width: 990px;
+}
+
+.top-bar-section ul {
+    margin: 0 15px;
+}
+
+ }
+
+.veryround {
+	background-color: #6098a8;
+	color: #81b3c1;
+    padding: 5px;
+    border-radius: 1000px;
+}
+
+
+
+
